@@ -1,6 +1,8 @@
 {
-  "name": "",
-  "description": "",
+  "name": "El Santo Rosario",
+  "description": "Guía interactiva del Santo Rosario con imagen del rosario en pantalla, marcado por doble tap, selección automática de misterios por día, intenciones diarias y rezos personalizables.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

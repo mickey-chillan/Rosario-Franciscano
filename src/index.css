@@ -1,1 +1,35 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #FBF8F1;
+    color: #1F1A17;
+  }
+
+  html.dark {
+    background-color: #111317;
+    color: #F2ECE1;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-prayer {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Smooth focus ring and touch behavior for interactive beads */
+.rosary-bead-node {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
